@@ -1,0 +1,139 @@
+.html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.form{
+  padding: 3%;
+  margin: 0 auto;
+  background-color: white;
+}
+.heading{
+  margin: 2%;
+  text-align: center;
+}
+.header {
+  background-color: #FDAF01;  
+height: 50px;
+width: 100%;
+}
+.fa-user{
+  background-color: lightgrey;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 2px;
+}
+
+.logo{
+  float: left;
+    padding: 4px;
+  margin: 2px;
+}
+
+.header-right{
+  float: right;
+  display: flex;
+    padding: 4px;
+  margin: 2px;
+    transform: translate(-25px,-45px);
+}
+.header-right a{
+text-decoration: none;
+color: black;
+}
+
+.account{
+    font-size: 18px;
+}
+.user_header{
+  height: auto;
+  padding: 7px;
+     background-color: purple;
+        color:yellow;
+        text-align: center;
+}
+.topnav {
+   background-color: purple;
+   width: 200px;
+   height:auto;
+   float: left; 
+}
+.user_header .icon {
+  display: none;
+  
+}
+.topnav a {
+   padding: 20px;
+text-align: center;
+   display: block;
+   font-size: 18px;
+   color:yellow;
+   cursor: pointer;
+   user-select: none;
+   text-align: justify;
+   text-decoration: none;
+ }
+ .page-footer{
+  background-color: #FDAF01;
+  color: black;
+font-family: 'Secular One', sans-serif;
+padding: 10px;
+
+}
+
+
+.footer-links li{
+  color: black;
+  text-decoration: none;
+margin: 5px;
+font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  .topnav a {
+    display: none;
+  }
+
+  .user_header a.icon {
+    float: left;
+    display: inline-block;
+    height: 10px;
+    color: white;
+    transform: translate(9px,4px);
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+ .topnav{
+  position: relative;
+   padding: -50px;
+   height: 0px;
+   width: 100%;  
+   z-index: 20;
+  text-align: center;
+
+}
+
+  .user_header.responsive .icon {
+    position: relative;
+
+  }
+    .topnav.responsive a {
+    float: none;
+    display: flex; 
+    text-align: center;
+    background-color: purple;
+  }
+  
+
+  }
+.form{
+  padding: 3%;
+  margin: 0 auto;
+  background-color: white;
+}
+.heading{
+	margin: 2%;
+  text-align: center;
+}

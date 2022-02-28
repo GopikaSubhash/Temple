@@ -1,0 +1,147 @@
+.html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+.heading{
+  margin: 4%;
+  text-align: center;
+}
+
+
+.cart{ 
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+    border: 1px solid red;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#bfe6f5;
+}
+  body
+    {
+        counter-reset: Serial;          
+    }
+
+    table
+    {
+        border-collapse: separate;
+    }
+
+    tr td:first-child:before
+    {
+      counter-increment: Serial;      
+      content: counter(Serial); 
+    }
+table{
+  width: 100%;
+}
+
+.total-price{
+    padding: 1%;
+      margin-left: 5%;
+        margin-right: 2%;
+    border: 1px solid red;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#bfe6f5;
+}
+
+
+@media screen and (max-width: 900px) {
+  .total-price{
+  width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+.cart{
+  margin: 0;
+}
+.total-price{
+  margin: 0;
+}
+  table{
+    font-size: 15px;
+  }
+   /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+      
+    tr:nth-child(odd) {
+      background: #ccc;
+    }
+    
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+        }
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 0;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+    tr td:first-child:before
+    {
+   position: absolute;
+  position: relative;
+    }
+        /*
+        Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+        */
+        td:nth-of-type(1):before { content: "Sl No"; }
+        td:nth-of-type(2):before { content: "Temple Name"; }
+        td:nth-of-type(3):before { content: "Pooja"; }
+        td:nth-of-type(4):before { content: "Date of offering"; }
+        td:nth-of-type(5):before { content: "Devotee name"; }
+        td:nth-of-type(6):before { content: "Price"; }
+        td:nth-of-type(7):before { content: "Delete"; }
+    
+
+}
+input[type=text] {
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+
+  background-color: #bfe6f5;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 6px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 85%
+ 
+}
+.btn1{
+ box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;   
+}
+

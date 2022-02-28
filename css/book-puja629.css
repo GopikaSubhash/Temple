@@ -1,0 +1,70 @@
+.html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+.form-header{
+  text-align: center;
+  margin: 4%;
+}
+
+.booking{
+  padding: 1%;
+       margin-left: 5%;
+        margin-right: 2%;
+    border: 1px solid red;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#bfe6f5;
+
+ }
+.total-price{
+    padding: 1%;
+      margin-left: 5%;
+        margin-right: 2%;
+    border: 1px solid red;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#bfe6f5;
+}
+#box {
+ /* z-index:10;*/
+  position:relative;  
+}
+#boxform {
+    z-index:10;
+ background-color: cyan;
+ padding:5px;
+ display:none;
+ position:absolute;
+ top:60px;
+}
+
+input[type="submit"] {
+  background:none;
+  color:#fff;
+  border:none;
+  text-align:left;
+  cursor:pointer;
+}
+
+.addcart{
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .total-price{
+  width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-header{
+    margin: 12%;
+  }
+.booking{
+  margin: 0;
+}
+.total-price{
+  margin: 0;
+}
+}

@@ -1,0 +1,94 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+ 
+}
+
+
+.header {
+  background-color: #FDAF01;  
+height: 50px;
+}
+.cart-logo{
+  top: 12px;
+  right: 10px;
+    font-size: 18px;
+
+}
+ a.cart-logo .cart-basket {
+  font-size: .6rem;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  background-color: #418deb;
+  border-radius: 50%;
+}
+
+.header-left{
+  float: left;
+}
+.logo{
+  margin: 8px;
+}
+.header-right{
+  float: right;
+  display: flex;
+
+}
+.goog-logo-link {
+   display:none !important;
+}
+
+.goog-te-gadget {
+   color: transparent !important;
+}
+.goog-te-gadget .goog-te-combo {
+   color: purple !important; 
+  font-size: 17px !important; 
+  background-color: transparent !important ; 
+
+}
+
+.header-right a{
+text-decoration: none;
+color: black;
+}
+.navbar{
+  width: 100%;
+}
+
+.account{
+margin: 2px;
+font-size: 24px;
+  position: absolute;
+      top: -1px;
+    right: 15px;
+}
+.fa-user{
+  background-color: lightgrey;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 2px;
+}
+
+.navbar li a{
+  font-size: 18px; 
+color: #FDAF01 !important;
+text-align: center !important;
+}
+
+.searchbar{
+    width: 658px!important;
+
+}
+
+@media screen and (max-width: 500px) {
+.goog-te-gadget .goog-te-combo {
+        font-size: 14px !important; 
+width: 129px!important;
+  }
+}

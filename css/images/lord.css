@@ -1,0 +1,166 @@
+.html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+ 
+}
+
+.header {
+  background-color: #FDAF01;  
+  width: 100%;
+  height: 100%;
+  overflow : hidden;
+  position: relative; 
+
+}
+.text-block {
+  text-align: left;
+  position: relative;
+  top: 50%;
+  left: 60%;
+ padding-left: 60px;
+  padding-right: 550px;
+  color: white;
+  transform: translate(-55%, -200%);
+
+}
+  
+::selection{
+  background: #6d50e2;
+  color: #fff;
+}
+.container{
+  max-width: 950px;
+  width: 100%;
+  height: auto;
+  padding: 40px 50px  40px  40px;
+  background: white;
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -21%);
+}
+.container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .list{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  
+  margin-right: 50px;
+  position: relative;
+}
+.content .list label{
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+ color:#FDAF01 ;
+
+  cursor: pointer;
+  
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+#Story:checked ~ .list label.Story,
+#Image-Gallery:checked ~ .list label.Image-Gallery,
+#Video-Gallery:checked ~ .list label.Video-Gallery,
+#Famous-Temples:checked ~ .list label.Famous-Temples{
+
+  color: #fff;
+}
+.content .list label:hover{
+  color: #6d50e2;
+}
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+#Story:checked ~ .list .slider{
+  top: 0;
+}
+#Image-Gallery:checked ~ .list .slider{
+  top: 60px;
+}
+#Video-Gallery:checked ~ .list .slider{
+  top: 120px;
+}
+#Famous-Temples:checked ~ .list .slider{
+  top: 180px;
+}
+
+.content .text-content{
+  width: 80%;
+  height: 100%;
+}
+.content .text{
+  display: none;
+}
+.content .text .title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.content .text p{
+  text-align: justify;
+}
+
+#Story:checked ~ .text-content .Story,
+#Image-Gallery:checked ~ .text-content .Image-Gallery,
+#Video-Gallery:checked ~ .text-content .Video-Gallery,
+#Famous-Temples:checked ~ .text-content .Famous-Temples{
+  display: block;
+}
+#Story:checked ~ .text-content .Story,
+#Image-Gallery:checked ~ .text-content .Image-Gallery,
+#Video-Gallery:checked ~ .text-content .Video-Gallery,
+#Famous-Temples:checked ~ .text-content .Famous-Temples,
+{
+  display: none;
+}
+.content input{
+  display: none;
+}
+
+.gallery{
+  height: 30rem;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 320px){
+
+  .container{
+
+    transform: translate(-2%, -15%);
+  }
+
+  .content .list{
+
+    width: 40%;
+  }
+  .content .list label{
+    height: 60px;
+    font-size: 3vw;
+  cursor: pointer;
+  padding-left: 5px;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+}
+

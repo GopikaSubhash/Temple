@@ -1,0 +1,32 @@
+.html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.user-wishlist{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.gallery{
+  height: 15rem;
+}
+.clear-wishlist{
+  float: right;
+}
+.wishlist a{
+    font-size: 20px;
+    text-decoration: none;
+  color: red;
+font-family: 'Luckiest Guy', cursive;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+}
+@media screen and (max-width: 500px) {
+.clear-wishlist{
+  float: none;
+}
+}

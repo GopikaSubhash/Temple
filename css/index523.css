@@ -1,0 +1,83 @@
+html,body{
+  height: 100%;
+  width: 100%;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+.hero-image {
+  background-image: url("images/temple2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  position: relative;
+
+}
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -18%);
+
+}
+.outer{
+    background-color: #fff;
+}
+.outer-1{
+  background-color: #f2d296;
+}
+.hero-text p{
+  opacity: 0.8;
+  font-size: 18px;
+  color: black;
+  padding: 20px;
+  font-weight: bold;
+  }
+
+.temples{
+  padding: 2%;
+  text-align: center;
+}
+
+.view-more{
+  float: right;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.owl-carousel .item .img{
+  height: 15rem;
+}
+.owl-carousel .item a{
+  font-size: 20px;
+    text-decoration: none;
+  color: red;
+font-family: 'Luckiest Guy', cursive;
+}
+.parallax-section{
+  background-color: black;
+  color: white;
+}
+.ts-testimonial{
+  padding: 2%;
+  text-align: center;
+}
+.ts-testimonial-item{
+  padding: 2%;
+    border: 1px solid red;
+font-family: 'Gloria Hallelujah', cursive;
+}
+.service{
+  padding: 5%;
+}
+
+@media screen and (max-width: 500px) {
+.view-more{
+  float: none;
+}
+}

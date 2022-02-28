@@ -1,0 +1,230 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+ 
+}
+  body
+    {
+        counter-reset: Serial;          
+    }
+
+    table
+    {
+        border-collapse: separate;
+    }
+
+    tr td:first-child:before
+    {
+      counter-increment: Serial;      
+      content: counter(Serial); 
+    }
+
+.header {
+  background-color: #FDAF01;  
+height: 50px;
+width: 100%;
+}
+.fa-user{
+  background-color: lightgrey;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 2px;
+}
+
+.logo{
+  float: left;
+    padding: 4px;
+  margin: 2px;
+}
+
+.header-right{
+  float: right;
+  display: flex;
+    padding: 4px;
+  margin: 2px;
+    transform: translate(-25px,-45px);
+}
+.header-right a{
+text-decoration: none;
+color: black;
+}
+
+.account{
+    font-size: 18px;
+}
+.user_header{
+  height: auto;
+  padding: 7px;
+     background-color: purple;
+        color:yellow;
+        text-align: center;
+}
+.topnav {
+   background-color: purple;
+   width: 200px;
+   height:auto;
+   float: left; 
+}
+
+.topnav a {
+
+   padding: 20px;
+text-align: center;
+   display: block;
+   font-size: 18px;
+   color:yellow;
+   cursor: pointer;
+   user-select: none;
+   text-align: justify;
+   text-decoration: none;
+ }
+.view-data{
+  float: inherit;
+  margin: 3%;
+}
+
+.heading{
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.cart{ 
+    padding: 1%;   
+    border: 1px solid red;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#bfe6f5;  
+      font-size: 15px;
+    text-align: center;
+
+}
+
+table{
+  width: 100%;
+}
+td{
+  padding: 1%;
+}
+
+.topnav a:hover { 
+  color: white;
+}
+
+.user_header .icon {
+  display: none;
+  
+}
+.page-footer{
+  background-color: #FDAF01;
+  color: black;
+font-family: 'Secular One', sans-serif;
+padding: 10px;
+
+}
+
+table{
+  text-align: center;
+}
+.footer-links li{
+  color: black;
+  text-decoration: none;
+margin: 5px;
+font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  .topnav a {
+    display: none;
+  }
+
+  .user_header a.icon {
+    float: left;
+    display: inline-block;
+    height: 10px;
+    color: white;
+    transform: translate(9px,4px);
+  }
+}
+@media screen and (max-width: 425px) {
+
+  .heading{
+  margin: 12%;
+}
+
+  table{
+    font-size: 15px;
+  }
+   /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+      
+    tr{
+    width: 400px;
+    }
+    
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 20%;
+
+        }
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 0;
+            left: 10px;
+            width: 20%;
+            white-space: nowrap;
+        }
+            tr td:first-child:before
+    {
+   position: absolute;
+  position: relative;
+    }
+       /*
+        Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+        */
+        td:nth-of-type(1):before { content: "Sl No";}
+        td:nth-of-type(2):before { content: "Pooja"; }
+        td:nth-of-type(3):before { content: "Offering date"; }
+        td:nth-of-type(4):before { content: "Devotee name"; }
+        td:nth-of-type(5):before { content: "Birth Star";}
+
+  }
+
+@media screen and (max-width: 900px) {
+ .topnav{
+  position: relative;
+   padding: -50px;
+   height: 0px;
+   width: 100%;  
+   z-index: 20;
+  text-align: center;
+
+}
+
+  .user_header.responsive .icon {
+    position: relative;
+
+  }
+    .topnav.responsive a {
+    float: none;
+    display: flex; 
+    text-align: center;
+    background-color: purple;
+  }
+  
+
+  }
